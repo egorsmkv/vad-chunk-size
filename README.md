@@ -1,6 +1,14 @@
 # VAD with `chunk_size`
 
-1. Download the VAD model:
+0. Install environment:
+
+```
+uv venv --python 3.12
+
+source .venv/bin/activate
+```
+
+2. Download the VAD model:
 
 ```
 mkdir models
@@ -13,5 +21,5 @@ wget -O "models/whisperx-vad-segmentation.bin" "https://whisperx.s3.eu-west-2.am
 3. Run:
 
 ```
-python run_vad.py
+python vad_run.py
 ```
